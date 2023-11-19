@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "solaria:tellurium_block"
+    }
+  },
+  "result": {
+    "item": "solaria:tellurium_ingot",
+    "count": 9
+  }
+}

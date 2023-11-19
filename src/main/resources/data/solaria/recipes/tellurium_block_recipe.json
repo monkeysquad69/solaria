@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "solaria:tellurium_ingot"
+    },
+    "1": {
+      "item": "solaria:tellurium_ingot"
+    },
+    "2": {
+      "item": "solaria:tellurium_ingot"
+    },
+    "3": {
+      "item": "solaria:tellurium_ingot"
+    },
+    "4": {
+      "item": "solaria:tellurium_ingot"
+    },
+    "5": {
+      "item": "solaria:tellurium_ingot"
+    },
+    "6": {
+      "item": "solaria:tellurium_ingot"
+    },
+    "7": {
+      "item": "solaria:tellurium_ingot"
+    },
+    "8": {
+      "item": "solaria:tellurium_ingot"
+    }
+  },
+  "result": {
+    "item": "solaria:tellurium_block",
+    "count": 1
+  }
+}

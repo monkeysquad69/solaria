@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "solaria:block/raw_tellurium_block"
+    }
+  }
+}

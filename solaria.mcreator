@@ -1,23 +1,55 @@
 {
   "mod_elements": [
     {
-      "name": "Tellurium",
-      "type": "item",
+      "name": "TelluriumOre",
+      "type": "block",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tellurium",
+      "registry_name": "tellurium_ore",
       "metadata": {
         "files": [
-          "src/main/java/com/monkeysquad/solaria/item/TelluriumItem.java",
-          "src/main/resources/assets/solaria/models/item/tellurium.json"
+          "src/main/resources/assets/solaria/models/item/tellurium_ore.json",
+          "src/main/java/com/monkeysquad/solaria/block/TelluriumOreBlock.java",
+          "src/main/resources/assets/solaria/blockstates/tellurium_ore.json",
+          "src/main/resources/assets/solaria/models/block/tellurium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "DeepslateTelluriumOre",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_tellurium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/models/item/deepslate_tellurium_ore.json",
+          "src/main/resources/assets/solaria/models/block/deepslate_tellurium_ore.json",
+          "src/main/resources/assets/solaria/blockstates/deepslate_tellurium_ore.json",
+          "src/main/java/com/monkeysquad/solaria/block/DeepslateTelluriumOreBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumIngot",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/models/item/tellurium_ingot.json",
+          "src/main/java/com/monkeysquad/solaria/item/TelluriumIngotItem.java"
         ]
       }
     },
     {
       "name": "RawTellurium",
       "type": "item",
-      "sortid": 1,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_tellurium",
@@ -29,18 +61,190 @@
       }
     },
     {
-      "name": "Telluriumore",
-      "type": "block",
-      "sortid": 3,
+      "name": "TelluriumLootTable",
+      "type": "loottable",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "telluriumore",
+      "registry_name": "tellurium_loot_table",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/item/telluriumore.json",
-          "src/main/resources/assets/solaria/blockstates/telluriumore.json",
-          "src/main/resources/assets/solaria/models/block/telluriumore.json",
-          "src/main/java/com/monkeysquad/solaria/block/TelluriumoreBlock.java"
+          "src/main/resources/data/solaria/loot_tables/blocks/tellurium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumDeepslateLootTable",
+      "type": "loottable",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_deepslate_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/loot_tables/blocks/deepslate_tellurium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumSmelt",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_smelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/tellurium_smelt.json"
+        ]
+      }
+    },
+    {
+      "name": "TelleriumBlast",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellerium_blast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/tellerium_blast.json"
+        ]
+      }
+    },
+    {
+      "name": "TelleriumOreSmelt",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellerium_ore_smelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/tellerium_ore_smelt.json"
+        ]
+      }
+    },
+    {
+      "name": "TelleriumOreBlast",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellerium_ore_blast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/tellerium_ore_blast.json"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumDeepslateOreBlast",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_deepslate_ore_blast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/tellurium_deepslate_ore_blast.json"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumDeepslateOreSmelt",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_deepslate_ore_smelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/tellurium_deepslate_ore_smelt.json"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumBlock",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/blockstates/tellurium_block.json",
+          "src/main/resources/assets/solaria/models/item/tellurium_block.json",
+          "src/main/java/com/monkeysquad/solaria/block/TelluriumBlockBlock.java",
+          "src/main/resources/assets/solaria/models/block/tellurium_block.json"
+        ]
+      }
+    },
+    {
+      "name": "RawTelluriumBlock",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_tellurium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/models/block/raw_tellurium_block.json",
+          "src/main/resources/assets/solaria/models/item/raw_tellurium_block.json",
+          "src/main/resources/assets/solaria/blockstates/raw_tellurium_block.json",
+          "src/main/java/com/monkeysquad/solaria/block/RawTelluriumBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RawTelluriumBlockRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_tellurium_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/raw_tellurium_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RawTelluriumRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_tellurium_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/raw_tellurium_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumRecipe",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/tellurium_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumBlockRecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/tellurium_block_recipe.json"
         ]
       }
     }
@@ -49,9 +253,12 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.solaria.tellurium_ore": "Tellurium Ore",
       "item.solaria.raw_tellurium": "Raw Tellurium",
-      "block.solaria.telluriumore": "Tellurium Ore",
-      "item.solaria.tellurium": "Tellurium Ingot"
+      "block.solaria.tellurium_block": "Tellurium Block",
+      "block.solaria.deepslate_tellurium_ore": "Deepslate Tellurium Ore",
+      "item.solaria.tellurium_ingot": "Tellurium Ingot",
+      "block.solaria.raw_tellurium_block": "Raw Tellurium Block"
     }
   },
   "foldersRoot": {

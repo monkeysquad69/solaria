@@ -1,5 +1,8 @@
 {
+  "block.solaria.tellurium_ore": "Tellurium Ore",
   "item.solaria.raw_tellurium": "Raw Tellurium",
-  "block.solaria.telluriumore": "Tellurium Ore",
-  "item.solaria.tellurium": "Tellurium Ingot"
+  "block.solaria.tellurium_block": "Tellurium Block",
+  "block.solaria.deepslate_tellurium_ore": "Deepslate Tellurium Ore",
+  "item.solaria.tellurium_ingot": "Tellurium Ingot",
+  "block.solaria.raw_tellurium_block": "Raw Tellurium Block"
 }

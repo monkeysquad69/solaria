@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "solaria:raw_tellurium"
+    },
+    "1": {
+      "item": "solaria:raw_tellurium"
+    },
+    "2": {
+      "item": "solaria:raw_tellurium"
+    },
+    "3": {
+      "item": "solaria:raw_tellurium"
+    },
+    "4": {
+      "item": "solaria:raw_tellurium"
+    },
+    "5": {
+      "item": "solaria:raw_tellurium"
+    },
+    "6": {
+      "item": "solaria:raw_tellurium"
+    },
+    "7": {
+      "item": "solaria:raw_tellurium"
+    },
+    "8": {
+      "item": "solaria:raw_tellurium"
+    }
+  },
+  "result": {
+    "item": "solaria:raw_tellurium_block",
+    "count": 1
+  }
+}

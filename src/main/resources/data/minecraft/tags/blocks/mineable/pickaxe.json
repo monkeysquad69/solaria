@@ -3,6 +3,7 @@
   "values": [
     "solaria:deepslate_tellurium_ore",
     "solaria:tellurium_ore",
+    "solaria:tellurium_block",
     "solaria:raw_tellurium_block"
   ]
 }

@@ -8,8 +8,8 @@ import net.minecraft.world.item.CreativeModeTabs;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
-public class TelluriumItem extends Item {
-	public TelluriumItem() {
+public class TelluriumIngotItem extends Item {
+	public TelluriumIngotItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.INGREDIENTS).register(content -> content.accept(this));
 	}

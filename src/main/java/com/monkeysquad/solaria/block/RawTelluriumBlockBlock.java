@@ -21,10 +21,10 @@ import java.util.Collections;
 
 import com.monkeysquad.solaria.init.SolariaModBlocks;
 
-public class TelluriumoreBlock extends Block {
-	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f);
+public class RawTelluriumBlockBlock extends Block {
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().sound(SoundType.STONE).strength(5f, 6f).requiresCorrectToolForDrops();
 
-	public TelluriumoreBlock() {
+	public RawTelluriumBlockBlock() {
 		super(PROPERTIES);
 	}
 
@@ -43,6 +43,6 @@ public class TelluriumoreBlock extends Block {
 
 	@Environment(EnvType.CLIENT)
 	public static void clientInit() {
-		BlockRenderLayerMap.INSTANCE.putBlock(SolariaModBlocks.TELLURIUMORE, RenderType.solid());
+		BlockRenderLayerMap.INSTANCE.putBlock(SolariaModBlocks.RAW_TELLURIUM_BLOCK, RenderType.solid());
 	}
 }

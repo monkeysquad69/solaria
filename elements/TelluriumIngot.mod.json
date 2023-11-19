@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tellurium_ingot_1",
+    "texture": "tellurium_ingot",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

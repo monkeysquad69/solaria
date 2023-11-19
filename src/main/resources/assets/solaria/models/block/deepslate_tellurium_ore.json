@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "solaria:block/deepslate_tellurium_ore",
+    "up": "solaria:block/deepslate_tellurium_ore",
+    "north": "solaria:block/deepslate_tellurium_ore",
+    "east": "solaria:block/deepslate_tellurium_ore",
+    "south": "solaria:block/deepslate_tellurium_ore",
+    "west": "solaria:block/deepslate_tellurium_ore",
+    "particle": "solaria:block/deepslate_tellurium_ore"
+  },
+  "render_type": "solid"
+}
