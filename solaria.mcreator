@@ -10,9 +10,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/solaria/models/item/tellurium_ore.json",
-          "src/main/java/com/monkeysquad/solaria/block/TelluriumOreBlock.java",
           "src/main/resources/assets/solaria/blockstates/tellurium_ore.json",
-          "src/main/resources/assets/solaria/models/block/tellurium_ore.json"
+          "src/main/resources/assets/solaria/models/block/tellurium_ore.json",
+          "src/main/java/com/monkeysquad/solaria/block/TelluriumOreBlock.java"
         ]
       }
     },
@@ -25,10 +25,10 @@
       "registry_name": "deepslate_tellurium_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/item/deepslate_tellurium_ore.json",
           "src/main/resources/assets/solaria/models/block/deepslate_tellurium_ore.json",
-          "src/main/resources/assets/solaria/blockstates/deepslate_tellurium_ore.json",
-          "src/main/java/com/monkeysquad/solaria/block/DeepslateTelluriumOreBlock.java"
+          "src/main/resources/assets/solaria/models/item/deepslate_tellurium_ore.json",
+          "src/main/java/com/monkeysquad/solaria/block/DeepslateTelluriumOreBlock.java",
+          "src/main/resources/assets/solaria/blockstates/deepslate_tellurium_ore.json"
         ]
       }
     },
@@ -41,8 +41,8 @@
       "registry_name": "tellurium_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/item/tellurium_ingot.json",
-          "src/main/java/com/monkeysquad/solaria/item/TelluriumIngotItem.java"
+          "src/main/java/com/monkeysquad/solaria/item/TelluriumIngotItem.java",
+          "src/main/resources/assets/solaria/models/item/tellurium_ingot.json"
         ]
       }
     },
@@ -173,10 +173,10 @@
       "registry_name": "tellurium_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/blockstates/tellurium_block.json",
-          "src/main/resources/assets/solaria/models/item/tellurium_block.json",
           "src/main/java/com/monkeysquad/solaria/block/TelluriumBlockBlock.java",
-          "src/main/resources/assets/solaria/models/block/tellurium_block.json"
+          "src/main/resources/assets/solaria/models/block/tellurium_block.json",
+          "src/main/resources/assets/solaria/models/item/tellurium_block.json",
+          "src/main/resources/assets/solaria/blockstates/tellurium_block.json"
         ]
       }
     },
@@ -189,8 +189,8 @@
       "registry_name": "raw_tellurium_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/block/raw_tellurium_block.json",
           "src/main/resources/assets/solaria/models/item/raw_tellurium_block.json",
+          "src/main/resources/assets/solaria/models/block/raw_tellurium_block.json",
           "src/main/resources/assets/solaria/blockstates/raw_tellurium_block.json",
           "src/main/java/com/monkeysquad/solaria/block/RawTelluriumBlockBlock.java"
         ]
