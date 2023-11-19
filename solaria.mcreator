@@ -12,7 +12,10 @@
           "src/main/resources/assets/solaria/models/item/tellurium_ore.json",
           "src/main/java/com/monkeysquad/solaria/block/TelluriumOreBlock.java",
           "src/main/resources/assets/solaria/blockstates/tellurium_ore.json",
-          "src/main/resources/assets/solaria/models/block/tellurium_ore.json"
+          "src/main/java/com/monkeysquad/solaria/world/features/ores/TelluriumOreFeature.java",
+          "src/main/resources/assets/solaria/models/block/tellurium_ore.json",
+          "src/main/resources/data/solaria/worldgen/configured_feature/tellurium_ore.json",
+          "src/main/resources/data/solaria/worldgen/placed_feature/tellurium_ore.json"
         ]
       }
     },
@@ -26,9 +29,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/solaria/models/item/deepslate_tellurium_ore.json",
+          "src/main/resources/data/solaria/worldgen/configured_feature/deepslate_tellurium_ore.json",
           "src/main/resources/assets/solaria/models/block/deepslate_tellurium_ore.json",
           "src/main/resources/assets/solaria/blockstates/deepslate_tellurium_ore.json",
-          "src/main/java/com/monkeysquad/solaria/block/DeepslateTelluriumOreBlock.java"
+          "src/main/java/com/monkeysquad/solaria/block/DeepslateTelluriumOreBlock.java",
+          "src/main/java/com/monkeysquad/solaria/world/features/ores/DeepslateTelluriumOreFeature.java",
+          "src/main/resources/data/solaria/worldgen/placed_feature/deepslate_tellurium_ore.json"
         ]
       }
     },
