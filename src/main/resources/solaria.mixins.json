@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.monkeysquad.solaria.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+	"SolariaModRepairItemRecipeMixin"  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}

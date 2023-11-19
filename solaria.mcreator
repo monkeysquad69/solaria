@@ -1,9 +1,58 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Tellurium",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/item/TelluriumItem.java",
+          "src/main/resources/assets/solaria/models/item/tellurium.json"
+        ]
+      }
+    },
+    {
+      "name": "RawTellurium",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_tellurium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/models/item/raw_tellurium.json",
+          "src/main/java/com/monkeysquad/solaria/item/RawTelluriumItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Telluriumore",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "telluriumore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/models/item/telluriumore.json",
+          "src/main/resources/assets/solaria/blockstates/telluriumore.json",
+          "src/main/resources/assets/solaria/models/block/telluriumore.json",
+          "src/main/java/com/monkeysquad/solaria/block/TelluriumoreBlock.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.solaria.raw_tellurium": "Raw Tellurium",
+      "block.solaria.telluriumore": "Tellurium Ore",
+      "item.solaria.tellurium": "Tellurium Ingot"
+    }
   },
   "foldersRoot": {
     "name": "~",

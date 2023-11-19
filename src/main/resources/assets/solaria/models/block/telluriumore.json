@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "solaria:block/tellurium_ore",
+    "up": "solaria:block/tellurium_ore",
+    "north": "solaria:block/tellurium_ore",
+    "east": "solaria:block/tellurium_ore",
+    "south": "solaria:block/tellurium_ore",
+    "west": "solaria:block/tellurium_ore",
+    "particle": "solaria:block/tellurium_ore"
+  },
+  "render_type": "solid"
+}

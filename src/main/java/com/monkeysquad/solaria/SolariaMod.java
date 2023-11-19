@@ -17,6 +17,9 @@ import org.apache.logging.log4j.LogManager;
 
 import net.fabricmc.api.ModInitializer;
 
+import com.monkeysquad.solaria.init.SolariaModItems;
+import com.monkeysquad.solaria.init.SolariaModBlocks;
+
 public class SolariaMod implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger();
 	public static final String MODID = "solaria";
@@ -24,6 +27,9 @@ public class SolariaMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing SolariaMod");
+
+		SolariaModBlocks.load();
+		SolariaModItems.load();
 
 	}
 }

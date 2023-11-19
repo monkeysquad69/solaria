@@ -1,1 +1,5 @@
-{}
+{
+  "item.solaria.raw_tellurium": "Raw Tellurium",
+  "block.solaria.telluriumore": "Tellurium Ore",
+  "item.solaria.tellurium": "Tellurium Ingot"
+}
