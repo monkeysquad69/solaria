@@ -4,6 +4,12 @@
     "solaria:deepslate_tellurium_ore",
     "solaria:tellurium_ore",
     "solaria:tellurium_block",
-    "solaria:raw_tellurium_block"
+    "solaria:raw_tellurium_block",
+    "solaria:tellurium_battery",
+    "solaria:battery_1",
+    "solaria:battery_2",
+    "solaria:battery_3",
+    "solaria:tellurium_battery_full",
+    "solaria:solar_pannel"
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "solaria:custom/solar_pannel",
+  "textures": {
+    "all": "solaria:block/solar_pannel",
+    "particle": "solaria:block/solar_pannel",
+    "0": "solaria:block/solar_pannel"
+  },
+  "render_type": "solid"
+}

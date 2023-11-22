@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "solaria:block/tellurium_battery_top",
+    "up": "solaria:block/tellurium_battery_top",
+    "north": "solaria:block/tellurium_battery_2",
+    "east": "solaria:block/tellurium_battery_2",
+    "south": "solaria:block/tellurium_battery_2",
+    "west": "solaria:block/tellurium_battery_2",
+    "particle": "solaria:block/tellurium_battery_top"
+  },
+  "render_type": "solid"
+}

@@ -10,12 +10,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/solaria/models/item/tellurium_ore.json",
-          "src/main/java/com/monkeysquad/solaria/world/features/ores/TelluriumOreFeature.java",
-          "src/main/resources/data/solaria/worldgen/placed_feature/tellurium_ore.json",
+          "src/main/java/com/monkeysquad/solaria/block/TelluriumOreBlock.java",
           "src/main/resources/assets/solaria/blockstates/tellurium_ore.json",
-          "src/main/resources/data/solaria/worldgen/configured_feature/tellurium_ore.json",
+          "src/main/java/com/monkeysquad/solaria/world/features/ores/TelluriumOreFeature.java",
           "src/main/resources/assets/solaria/models/block/tellurium_ore.json",
-          "src/main/java/com/monkeysquad/solaria/block/TelluriumOreBlock.java"
+          "src/main/resources/data/solaria/worldgen/configured_feature/tellurium_ore.json",
+          "src/main/resources/data/solaria/worldgen/placed_feature/tellurium_ore.json"
         ]
       }
     },
@@ -28,13 +28,13 @@
       "registry_name": "deepslate_tellurium_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/block/deepslate_tellurium_ore.json",
-          "src/main/java/com/monkeysquad/solaria/world/features/ores/DeepslateTelluriumOreFeature.java",
-          "src/main/resources/data/solaria/worldgen/configured_feature/deepslate_tellurium_ore.json",
           "src/main/resources/assets/solaria/models/item/deepslate_tellurium_ore.json",
+          "src/main/resources/data/solaria/worldgen/configured_feature/deepslate_tellurium_ore.json",
+          "src/main/resources/assets/solaria/models/block/deepslate_tellurium_ore.json",
+          "src/main/resources/assets/solaria/blockstates/deepslate_tellurium_ore.json",
           "src/main/java/com/monkeysquad/solaria/block/DeepslateTelluriumOreBlock.java",
-          "src/main/resources/data/solaria/worldgen/placed_feature/deepslate_tellurium_ore.json",
-          "src/main/resources/assets/solaria/blockstates/deepslate_tellurium_ore.json"
+          "src/main/java/com/monkeysquad/solaria/world/features/ores/DeepslateTelluriumOreFeature.java",
+          "src/main/resources/data/solaria/worldgen/placed_feature/deepslate_tellurium_ore.json"
         ]
       }
     },
@@ -253,6 +253,262 @@
           "src/main/resources/data/solaria/recipes/tellurium_block_recipe.json"
         ]
       }
+    },
+    {
+      "name": "TelluriumBattery",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_battery",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/block/TelluriumBatteryBlock.java",
+          "src/main/resources/assets/solaria/models/block/tellurium_battery.json",
+          "src/main/resources/assets/solaria/models/item/tellurium_battery.json",
+          "src/main/resources/assets/solaria/blockstates/tellurium_battery.json"
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "Battery1",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/models/item/battery_1.json",
+          "src/main/resources/assets/solaria/models/block/battery_1.json",
+          "src/main/java/com/monkeysquad/solaria/block/Battery1Block.java",
+          "src/main/resources/assets/solaria/blockstates/battery_1.json"
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "Battery2",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_2",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/block/Battery2Block.java",
+          "src/main/resources/assets/solaria/models/item/battery_2.json",
+          "src/main/resources/assets/solaria/blockstates/battery_2.json",
+          "src/main/resources/assets/solaria/models/block/battery_2.json"
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "Battery3",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/models/item/battery_3.json",
+          "src/main/resources/assets/solaria/models/block/battery_3.json",
+          "src/main/resources/assets/solaria/blockstates/battery_3.json",
+          "src/main/java/com/monkeysquad/solaria/block/Battery3Block.java"
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "TelluriumBatteryFull",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_battery_full",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/block/TelluriumBatteryFullBlock.java",
+          "src/main/resources/assets/solaria/models/block/tellurium_battery_full.json",
+          "src/main/resources/assets/solaria/blockstates/tellurium_battery_full.json",
+          "src/main/resources/assets/solaria/models/item/tellurium_battery_full.json"
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "TelluriumBatteryUpdateTick",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_battery_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/procedures/TelluriumBatteryUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "BatteryRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/battery_recipe.json"
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "SolarPannel",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solar_pannel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/models/item/solar_pannel.json",
+          "src/main/java/com/monkeysquad/solaria/block/SolarPannelBlock.java",
+          "src/main/resources/assets/solaria/blockstates/solar_pannel.json",
+          "src/main/resources/assets/solaria/models/block/solar_pannel.json"
+        ]
+      }
+    },
+    {
+      "name": "Batterycharge1",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batterycharge_1",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/procedures/Batterycharge1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "Batterycharge2",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batterycharge_2",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/procedures/Batterycharge2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "Batterycharge3",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "batterycharge_3",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/procedures/Batterycharge3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Battery"
+    },
+    {
+      "name": "SolarPannelRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solar_pannel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/solar_pannel_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -262,14 +518,25 @@
       "block.solaria.tellurium_ore": "Tellurium Ore",
       "item.solaria.raw_tellurium": "Raw Tellurium",
       "block.solaria.tellurium_block": "Tellurium Block",
-      "block.solaria.deepslate_tellurium_ore": "Deepslate Tellurium Ore",
       "item.solaria.tellurium_ingot": "Tellurium Ingot",
-      "block.solaria.raw_tellurium_block": "Raw Tellurium Block"
+      "block.solaria.battery_3": "Tellurium Battery",
+      "block.solaria.battery_2": "Tellurium Battery",
+      "block.solaria.battery_1": "Tellurium Battery",
+      "block.solaria.tellurium_battery_full": "Tellurium Battery",
+      "block.solaria.deepslate_tellurium_ore": "Deepslate Tellurium Ore",
+      "block.solaria.raw_tellurium_block": "Raw Tellurium Block",
+      "block.solaria.tellurium_battery": "Tellurium Battery",
+      "block.solaria.solar_pannel": "Solar Pannel"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Battery",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "solaria",

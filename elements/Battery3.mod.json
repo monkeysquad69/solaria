@@ -2,15 +2,15 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "tellurium_block_top",
-    "textureTop": "tellurium_block_top",
-    "textureLeft": "tellurium_block_side",
-    "textureFront": "tellurium_block_side",
-    "textureRight": "tellurium_block_side",
-    "textureBack": "tellurium_block_side",
+    "texture": "tellurium_battery_top",
+    "textureTop": "tellurium_battery_top",
+    "textureLeft": "tellurium_battery_3",
+    "textureFront": "tellurium_battery_3",
+    "textureRight": "tellurium_battery_3",
+    "textureBack": "tellurium_battery_3",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Tellurium Block",
+    "name": "Tellurium Battery",
     "specialInfo": [],
-    "hardness": 5.0,
-    "resistance": 6.0,
+    "hardness": 6.0,
+    "resistance": 8.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "No creative tab entry"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -56,12 +56,12 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 0,
+    "tickRate": 1200,
     "tickRandomly": false,
     "isReplaceable": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "emittedRedstonePower": {
-      "fixedValue": 15.0
+      "fixedValue": 3.0
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -117,6 +117,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "Batterycharge3"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

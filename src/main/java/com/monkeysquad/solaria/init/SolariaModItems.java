@@ -23,6 +23,12 @@ public class SolariaModItems {
 	public static Item RAW_TELLURIUM;
 	public static Item TELLURIUM_BLOCK;
 	public static Item RAW_TELLURIUM_BLOCK;
+	public static Item TELLURIUM_BATTERY;
+	public static Item BATTERY_1;
+	public static Item BATTERY_2;
+	public static Item BATTERY_3;
+	public static Item TELLURIUM_BATTERY_FULL;
+	public static Item SOLAR_PANNEL;
 
 	public static void load() {
 		DEEPSLATE_TELLURIUM_ORE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "deepslate_tellurium_ore"), new BlockItem(SolariaModBlocks.DEEPSLATE_TELLURIUM_ORE, new Item.Properties()));
@@ -35,6 +41,14 @@ public class SolariaModItems {
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register(content -> content.accept(TELLURIUM_BLOCK));
 		RAW_TELLURIUM_BLOCK = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "raw_tellurium_block"), new BlockItem(SolariaModBlocks.RAW_TELLURIUM_BLOCK, new Item.Properties()));
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(content -> content.accept(RAW_TELLURIUM_BLOCK));
+		TELLURIUM_BATTERY = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "tellurium_battery"), new BlockItem(SolariaModBlocks.TELLURIUM_BATTERY, new Item.Properties()));
+		BATTERY_1 = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "battery_1"), new BlockItem(SolariaModBlocks.BATTERY_1, new Item.Properties()));
+		BATTERY_2 = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "battery_2"), new BlockItem(SolariaModBlocks.BATTERY_2, new Item.Properties()));
+		BATTERY_3 = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "battery_3"), new BlockItem(SolariaModBlocks.BATTERY_3, new Item.Properties()));
+		TELLURIUM_BATTERY_FULL = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "tellurium_battery_full"), new BlockItem(SolariaModBlocks.TELLURIUM_BATTERY_FULL, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(content -> content.accept(TELLURIUM_BATTERY_FULL));
+		SOLAR_PANNEL = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "solar_pannel"), new BlockItem(SolariaModBlocks.SOLAR_PANNEL, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(content -> content.accept(SOLAR_PANNEL));
 	}
 
 	public static void clientLoad() {

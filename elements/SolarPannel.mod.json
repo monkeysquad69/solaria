@@ -2,15 +2,15 @@
   "_fv": 47,
   "_type": "block",
   "definition": {
-    "texture": "tellurium_block_top",
-    "textureTop": "tellurium_block_top",
-    "textureLeft": "tellurium_block_side",
-    "textureFront": "tellurium_block_side",
-    "textureRight": "tellurium_block_side",
-    "textureBack": "tellurium_block_side",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 5,
+    "texture": "solar_pannel",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "solar_pannel:default",
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -18,7 +18,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -28,19 +28,19 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 16.0,
+        "My": 5.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Tellurium Block",
+    "name": "Solar Pannel",
     "specialInfo": [],
-    "hardness": 5.0,
-    "resistance": 6.0,
+    "hardness": 7.0,
+    "resistance": 4.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "REDSTONE"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -52,7 +52,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
       "value": "IRON"
     },
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

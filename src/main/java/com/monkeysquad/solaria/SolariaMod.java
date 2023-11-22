@@ -17,6 +17,7 @@ import org.apache.logging.log4j.LogManager;
 
 import net.fabricmc.api.ModInitializer;
 
+import com.monkeysquad.solaria.init.SolariaModProcedures;
 import com.monkeysquad.solaria.init.SolariaModItems;
 import com.monkeysquad.solaria.init.SolariaModFeatures;
 import com.monkeysquad.solaria.init.SolariaModBlocks;
@@ -33,6 +34,8 @@ public class SolariaMod implements ModInitializer {
 		SolariaModItems.load();
 
 		SolariaModFeatures.load();
+
+		SolariaModProcedures.load();
 
 	}
 }

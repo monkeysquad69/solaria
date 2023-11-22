@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "solaria:block/solar_pannel"
+    }
+  }
+}
