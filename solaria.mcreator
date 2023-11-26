@@ -509,6 +509,66 @@
           "src/main/resources/data/solaria/recipes/solar_pannel_recipe.json"
         ]
       }
+    },
+    {
+      "name": "Trest",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trest",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/item/TrestItem.java",
+          "src/main/resources/assets/solaria/models/item/trest.json"
+        ]
+      }
+    },
+    {
+      "name": "GrenadeRangedItemUsed",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenade_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/procedures/GrenadeRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Grenade",
+      "type": "rangeditem",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grenade",
+      "metadata": {
+        "files": [
+          "src/main/java/com/monkeysquad/solaria/entity/GrenadeEntity.java",
+          "src/main/resources/assets/solaria/models/item/grenade.json",
+          "src/main/java/com/monkeysquad/solaria/item/GrenadeItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -518,6 +578,7 @@
       "block.solaria.tellurium_ore": "Tellurium Ore",
       "item.solaria.raw_tellurium": "Raw Tellurium",
       "block.solaria.tellurium_block": "Tellurium Block",
+      "item.solaria.trest": "Test",
       "item.solaria.tellurium_ingot": "Tellurium Ingot",
       "block.solaria.battery_3": "Tellurium Battery",
       "block.solaria.battery_2": "Tellurium Battery",
@@ -525,6 +586,7 @@
       "block.solaria.tellurium_battery_full": "Tellurium Battery",
       "block.solaria.deepslate_tellurium_ore": "Deepslate Tellurium Ore",
       "block.solaria.raw_tellurium_block": "Raw Tellurium Block",
+      "item.solaria.grenade": "Grenade",
       "block.solaria.tellurium_battery": "Tellurium Battery",
       "block.solaria.solar_pannel": "Solar Pannel"
     }

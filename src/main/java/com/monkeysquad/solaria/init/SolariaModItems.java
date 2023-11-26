@@ -12,8 +12,10 @@ import net.minecraft.core.Registry;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
+import com.monkeysquad.solaria.item.TrestItem;
 import com.monkeysquad.solaria.item.TelluriumIngotItem;
 import com.monkeysquad.solaria.item.RawTelluriumItem;
+import com.monkeysquad.solaria.item.GrenadeItem;
 import com.monkeysquad.solaria.SolariaMod;
 
 public class SolariaModItems {
@@ -29,6 +31,8 @@ public class SolariaModItems {
 	public static Item BATTERY_3;
 	public static Item TELLURIUM_BATTERY_FULL;
 	public static Item SOLAR_PANNEL;
+	public static Item TREST;
+	public static Item GRENADE;
 
 	public static void load() {
 		DEEPSLATE_TELLURIUM_ORE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "deepslate_tellurium_ore"), new BlockItem(SolariaModBlocks.DEEPSLATE_TELLURIUM_ORE, new Item.Properties()));
@@ -49,6 +53,8 @@ public class SolariaModItems {
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(content -> content.accept(TELLURIUM_BATTERY_FULL));
 		SOLAR_PANNEL = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "solar_pannel"), new BlockItem(SolariaModBlocks.SOLAR_PANNEL, new Item.Properties()));
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(content -> content.accept(SOLAR_PANNEL));
+		TREST = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "trest"), new TrestItem());
+		GRENADE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(SolariaMod.MODID, "grenade"), new GrenadeItem());
 	}
 
 	public static void clientLoad() {

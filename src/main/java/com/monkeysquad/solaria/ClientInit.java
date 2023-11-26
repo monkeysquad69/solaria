@@ -16,6 +16,7 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ClientModInitializer;
 
+import com.monkeysquad.solaria.init.SolariaModEntityRenderers;
 import com.monkeysquad.solaria.init.SolariaModBlocks;
 
 @Environment(EnvType.CLIENT)
@@ -25,5 +26,6 @@ public class ClientInit implements ClientModInitializer {
 
 		SolariaModBlocks.clientLoad();
 
+		SolariaModEntityRenderers.load();
 	}
 }
