@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "solaria:solar_pannel"
+    "solaria:solar_pannel",
+    "solaria:solar_landmine"
   ]
 }

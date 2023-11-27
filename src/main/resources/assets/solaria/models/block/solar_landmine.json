@@ -1,0 +1,9 @@
+{
+  "parent": "solaria:custom/solar_land_mine",
+  "textures": {
+    "all": "solaria:block/solar_land_mine",
+    "particle": "solaria:block/solar_land_mine",
+    "0": "solaria:block/solar_land_mine"
+  },
+  "render_type": "solid"
+}

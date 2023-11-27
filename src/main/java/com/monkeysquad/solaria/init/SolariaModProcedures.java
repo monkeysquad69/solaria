@@ -5,7 +5,8 @@
 package com.monkeysquad.solaria.init;
 
 import com.monkeysquad.solaria.procedures.TelluriumBatteryUpdateTickProcedure;
-import com.monkeysquad.solaria.procedures.GrenadeRangedItemUsedProcedure;
+import com.monkeysquad.solaria.procedures.SolarLandmineEntityWalksOnTheBlockProcedure;
+import com.monkeysquad.solaria.procedures.SolarLandmineBlockValidPlacementConditionProcedure;
 import com.monkeysquad.solaria.procedures.Batterycharge3Procedure;
 import com.monkeysquad.solaria.procedures.Batterycharge2Procedure;
 import com.monkeysquad.solaria.procedures.Batterycharge1Procedure;
@@ -17,6 +18,7 @@ public class SolariaModProcedures {
 		new Batterycharge1Procedure();
 		new Batterycharge2Procedure();
 		new Batterycharge3Procedure();
-		new GrenadeRangedItemUsedProcedure();
+		new SolarLandmineBlockValidPlacementConditionProcedure();
+		new SolarLandmineEntityWalksOnTheBlockProcedure();
 	}
 }

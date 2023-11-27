@@ -14,6 +14,7 @@ import com.monkeysquad.solaria.block.TelluriumBlockBlock;
 import com.monkeysquad.solaria.block.TelluriumBatteryFullBlock;
 import com.monkeysquad.solaria.block.TelluriumBatteryBlock;
 import com.monkeysquad.solaria.block.SolarPannelBlock;
+import com.monkeysquad.solaria.block.SolarLandmineBlock;
 import com.monkeysquad.solaria.block.RawTelluriumBlockBlock;
 import com.monkeysquad.solaria.block.DeepslateTelluriumOreBlock;
 import com.monkeysquad.solaria.block.Battery3Block;
@@ -32,6 +33,7 @@ public class SolariaModBlocks {
 	public static Block BATTERY_3;
 	public static Block TELLURIUM_BATTERY_FULL;
 	public static Block SOLAR_PANNEL;
+	public static Block SOLAR_LANDMINE;
 
 	public static void load() {
 		DEEPSLATE_TELLURIUM_ORE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(SolariaMod.MODID, "deepslate_tellurium_ore"), new DeepslateTelluriumOreBlock());
@@ -44,6 +46,7 @@ public class SolariaModBlocks {
 		BATTERY_3 = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(SolariaMod.MODID, "battery_3"), new Battery3Block());
 		TELLURIUM_BATTERY_FULL = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(SolariaMod.MODID, "tellurium_battery_full"), new TelluriumBatteryFullBlock());
 		SOLAR_PANNEL = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(SolariaMod.MODID, "solar_pannel"), new SolarPannelBlock());
+		SOLAR_LANDMINE = Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(SolariaMod.MODID, "solar_landmine"), new SolarLandmineBlock());
 	}
 
 	public static void clientLoad() {
@@ -57,5 +60,6 @@ public class SolariaModBlocks {
 		Battery3Block.clientInit();
 		TelluriumBatteryFullBlock.clientInit();
 		SolarPannelBlock.clientInit();
+		SolarLandmineBlock.clientInit();
 	}
 }

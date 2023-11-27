@@ -511,29 +511,16 @@
       }
     },
     {
-      "name": "Trest",
-      "type": "item",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "trest",
-      "metadata": {
-        "files": [
-          "src/main/java/com/monkeysquad/solaria/item/TrestItem.java",
-          "src/main/resources/assets/solaria/models/item/trest.json"
-        ]
-      }
-    },
-    {
-      "name": "GrenadeRangedItemUsed",
+      "name": "SolarLandmineBlockValidPlacementCondition",
       "type": "procedure",
-      "sortid": 40,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grenade_ranged_item_used",
+      "registry_name": "solar_landmine_block_valid_placement_condition",
       "metadata": {
+        "return_type": "logic",
         "files": [
-          "src/main/java/com/monkeysquad/solaria/procedures/GrenadeRangedItemUsedProcedure.java"
+          "src/main/java/com/monkeysquad/solaria/procedures/SolarLandmineBlockValidPlacementConditionProcedure.java"
         ],
         "dependencies": [
           {
@@ -556,17 +543,62 @@
       }
     },
     {
-      "name": "Grenade",
-      "type": "rangeditem",
-      "sortid": 41,
+      "name": "SolarLandmineEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grenade",
+      "registry_name": "solar_landmine_entity_walks_on_the_block",
       "metadata": {
         "files": [
-          "src/main/java/com/monkeysquad/solaria/entity/GrenadeEntity.java",
-          "src/main/resources/assets/solaria/models/item/grenade.json",
-          "src/main/java/com/monkeysquad/solaria/item/GrenadeItem.java"
+          "src/main/java/com/monkeysquad/solaria/procedures/SolarLandmineEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SolarLandmine",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solar_landmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/solaria/blockstates/solar_landmine.json",
+          "src/main/resources/assets/solaria/models/item/solar_landmine.json",
+          "src/main/resources/assets/solaria/models/block/solar_landmine.json",
+          "src/main/java/com/monkeysquad/solaria/block/SolarLandmineBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SolarLandmineRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solar_landmine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/solaria/recipes/solar_landmine_recipe.json"
         ]
       }
     }
@@ -578,7 +610,6 @@
       "block.solaria.tellurium_ore": "Tellurium Ore",
       "item.solaria.raw_tellurium": "Raw Tellurium",
       "block.solaria.tellurium_block": "Tellurium Block",
-      "item.solaria.trest": "Test",
       "item.solaria.tellurium_ingot": "Tellurium Ingot",
       "block.solaria.battery_3": "Tellurium Battery",
       "block.solaria.battery_2": "Tellurium Battery",
@@ -586,8 +617,8 @@
       "block.solaria.tellurium_battery_full": "Tellurium Battery",
       "block.solaria.deepslate_tellurium_ore": "Deepslate Tellurium Ore",
       "block.solaria.raw_tellurium_block": "Raw Tellurium Block",
-      "item.solaria.grenade": "Grenade",
       "block.solaria.tellurium_battery": "Tellurium Battery",
+      "block.solaria.solar_landmine": "Solar Landmine",
       "block.solaria.solar_pannel": "Solar Pannel"
     }
   },

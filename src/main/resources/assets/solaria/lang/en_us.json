@@ -2,7 +2,6 @@
   "block.solaria.tellurium_ore": "Tellurium Ore",
   "item.solaria.raw_tellurium": "Raw Tellurium",
   "block.solaria.tellurium_block": "Tellurium Block",
-  "item.solaria.trest": "Test",
   "item.solaria.tellurium_ingot": "Tellurium Ingot",
   "block.solaria.battery_3": "Tellurium Battery",
   "block.solaria.battery_2": "Tellurium Battery",
@@ -10,7 +9,7 @@
   "block.solaria.tellurium_battery_full": "Tellurium Battery",
   "block.solaria.deepslate_tellurium_ore": "Deepslate Tellurium Ore",
   "block.solaria.raw_tellurium_block": "Raw Tellurium Block",
-  "item.solaria.grenade": "Grenade",
   "block.solaria.tellurium_battery": "Tellurium Battery",
+  "block.solaria.solar_landmine": "Solar Landmine",
   "block.solaria.solar_pannel": "Solar Pannel"
 }

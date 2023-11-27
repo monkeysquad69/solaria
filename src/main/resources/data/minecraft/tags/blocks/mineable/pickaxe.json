@@ -10,6 +10,7 @@
     "solaria:battery_2",
     "solaria:battery_3",
     "solaria:tellurium_battery_full",
-    "solaria:solar_pannel"
+    "solaria:solar_pannel",
+    "solaria:solar_landmine"
   ]
 }

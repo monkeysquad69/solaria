@@ -20,7 +20,6 @@ import net.fabricmc.api.ModInitializer;
 import com.monkeysquad.solaria.init.SolariaModProcedures;
 import com.monkeysquad.solaria.init.SolariaModItems;
 import com.monkeysquad.solaria.init.SolariaModFeatures;
-import com.monkeysquad.solaria.init.SolariaModEntities;
 import com.monkeysquad.solaria.init.SolariaModBlocks;
 
 public class SolariaMod implements ModInitializer {
@@ -31,7 +30,6 @@ public class SolariaMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Initializing SolariaMod");
 
-		SolariaModEntities.load();
 		SolariaModBlocks.load();
 		SolariaModItems.load();
 
