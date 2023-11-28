@@ -47,8 +47,8 @@
       "registry_name": "tellurium_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/item/tellurium_ingot.json",
-          "src/main/java/com/monkeysquad/solaria/item/TelluriumIngotItem.java"
+          "src/main/java/com/monkeysquad/solaria/item/TelluriumIngotItem.java",
+          "src/main/resources/assets/solaria/models/item/tellurium_ingot.json"
         ]
       }
     },
@@ -179,10 +179,10 @@
       "registry_name": "tellurium_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/blockstates/tellurium_block.json",
-          "src/main/resources/assets/solaria/models/item/tellurium_block.json",
           "src/main/java/com/monkeysquad/solaria/block/TelluriumBlockBlock.java",
-          "src/main/resources/assets/solaria/models/block/tellurium_block.json"
+          "src/main/resources/assets/solaria/models/block/tellurium_block.json",
+          "src/main/resources/assets/solaria/models/item/tellurium_block.json",
+          "src/main/resources/assets/solaria/blockstates/tellurium_block.json"
         ]
       }
     },
@@ -195,8 +195,8 @@
       "registry_name": "raw_tellurium_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/block/raw_tellurium_block.json",
           "src/main/resources/assets/solaria/models/item/raw_tellurium_block.json",
+          "src/main/resources/assets/solaria/models/block/raw_tellurium_block.json",
           "src/main/resources/assets/solaria/blockstates/raw_tellurium_block.json",
           "src/main/java/com/monkeysquad/solaria/block/RawTelluriumBlockBlock.java"
         ]
@@ -263,10 +263,10 @@
       "registry_name": "tellurium_battery",
       "metadata": {
         "files": [
-          "src/main/java/com/monkeysquad/solaria/block/TelluriumBatteryBlock.java",
           "src/main/resources/assets/solaria/models/block/tellurium_battery.json",
           "src/main/resources/assets/solaria/models/item/tellurium_battery.json",
-          "src/main/resources/assets/solaria/blockstates/tellurium_battery.json"
+          "src/main/resources/assets/solaria/blockstates/tellurium_battery.json",
+          "src/main/java/com/monkeysquad/solaria/block/TelluriumBatteryBlock.java"
         ]
       },
       "path": "~/Battery"
@@ -280,10 +280,10 @@
       "registry_name": "battery_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/item/battery_1.json",
-          "src/main/resources/assets/solaria/models/block/battery_1.json",
           "src/main/java/com/monkeysquad/solaria/block/Battery1Block.java",
-          "src/main/resources/assets/solaria/blockstates/battery_1.json"
+          "src/main/resources/assets/solaria/blockstates/battery_1.json",
+          "src/main/resources/assets/solaria/models/block/battery_1.json",
+          "src/main/resources/assets/solaria/models/item/battery_1.json"
         ]
       },
       "path": "~/Battery"
@@ -298,9 +298,9 @@
       "metadata": {
         "files": [
           "src/main/java/com/monkeysquad/solaria/block/Battery2Block.java",
-          "src/main/resources/assets/solaria/models/item/battery_2.json",
           "src/main/resources/assets/solaria/blockstates/battery_2.json",
-          "src/main/resources/assets/solaria/models/block/battery_2.json"
+          "src/main/resources/assets/solaria/models/block/battery_2.json",
+          "src/main/resources/assets/solaria/models/item/battery_2.json"
         ]
       },
       "path": "~/Battery"
@@ -314,10 +314,10 @@
       "registry_name": "battery_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/item/battery_3.json",
-          "src/main/resources/assets/solaria/models/block/battery_3.json",
+          "src/main/java/com/monkeysquad/solaria/block/Battery3Block.java",
           "src/main/resources/assets/solaria/blockstates/battery_3.json",
-          "src/main/java/com/monkeysquad/solaria/block/Battery3Block.java"
+          "src/main/resources/assets/solaria/models/block/battery_3.json",
+          "src/main/resources/assets/solaria/models/item/battery_3.json"
         ]
       },
       "path": "~/Battery"
@@ -331,10 +331,10 @@
       "registry_name": "tellurium_battery_full",
       "metadata": {
         "files": [
+          "src/main/resources/assets/solaria/models/item/tellurium_battery_full.json",
           "src/main/java/com/monkeysquad/solaria/block/TelluriumBatteryFullBlock.java",
           "src/main/resources/assets/solaria/models/block/tellurium_battery_full.json",
-          "src/main/resources/assets/solaria/blockstates/tellurium_battery_full.json",
-          "src/main/resources/assets/solaria/models/item/tellurium_battery_full.json"
+          "src/main/resources/assets/solaria/blockstates/tellurium_battery_full.json"
         ]
       },
       "path": "~/Battery"
@@ -394,10 +394,10 @@
       "registry_name": "solar_pannel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/models/item/solar_pannel.json",
+          "src/main/resources/assets/solaria/models/block/solar_pannel.json",
           "src/main/java/com/monkeysquad/solaria/block/SolarPannelBlock.java",
-          "src/main/resources/assets/solaria/blockstates/solar_pannel.json",
-          "src/main/resources/assets/solaria/models/block/solar_pannel.json"
+          "src/main/resources/assets/solaria/models/item/solar_pannel.json",
+          "src/main/resources/assets/solaria/blockstates/solar_pannel.json"
         ]
       }
     },
@@ -555,6 +555,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -582,10 +586,10 @@
       "registry_name": "solar_landmine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/solaria/blockstates/solar_landmine.json",
-          "src/main/resources/assets/solaria/models/item/solar_landmine.json",
+          "src/main/java/com/monkeysquad/solaria/block/SolarLandmineBlock.java",
           "src/main/resources/assets/solaria/models/block/solar_landmine.json",
-          "src/main/java/com/monkeysquad/solaria/block/SolarLandmineBlock.java"
+          "src/main/resources/assets/solaria/models/item/solar_landmine.json",
+          "src/main/resources/assets/solaria/blockstates/solar_landmine.json"
         ]
       }
     },
